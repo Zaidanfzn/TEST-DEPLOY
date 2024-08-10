@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-section {
+    display: flex;
+    background-color: rgba(249, 250, 251, 1);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    max-width: 728px;
+    background-color: rgba(243, 244, 246, 1);
+    border-radius: 16px;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    max-width: 235px;
+    padding: 0 64px;
+}
+
+.title {
+    color: rgba(47, 133, 90, 1);
+    font-size: 24px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.email-field {
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid rgba(156, 163, 175, 1);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-field {
+    width: 90%;
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid rgba(156, 163, 175, 1);
+}
+
+.eye-icon {
+    top: 50%;
+    right: 10px;
+    width: auto;
+    height: 14px;
+    position: absolute;
+    transform: translate(0, -50%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    cursor: pointer;
+}
+
+.button-login {
+    background-color: rgba(47, 133, 90,1 );
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    border: 1px solid rgba(156, 163, 175, 1);
+    padding: 10px 0;
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.button-login:hover {
+    transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.05) scaleY(1.05);
+}
+
+.separator {
+    display: grid;
+    margin-top: 25px;
+    align-items: center; /* Di sini dia bisa menghilangkan border kanan kiri gitu, curiga dia naikkin border bottom ke tengah, jadi sisanya ilang, nanti tanya*/
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    color: rgba(156, 163, 175, 1);
+}
+
+.line {
+    border-top: 1px;
+    border-color: rgba(156, 163, 175, 1);
+    width: 100%;
+}
+
+.or-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.google-button {
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 8px;
+    padding: 8px 0;
+    border-radius: 12px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid rgba(156, 163, 175, 1);
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.google-button:hover {
+    transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.05) scaleY(1.05);
+}
+
+.google-icon {
+    margin-right: 12px;
+}
+
+.forgot-password {
+    margin-top: 20px;
+    padding: 16px 0;
+    font-size: 12px;
+    border-bottom: 1px solid;
+    border-color: rgba(156, 163, 175, 1);
+}
+
+.register-container {
+    display: flex;
+    margin-top: 12px;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center; /* Di sini dia bisa mengecilkan border ni, tanya ya*/
+}
+
+.register-button {
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255,1);
+    font-weight: 700;
+    border-radius: 12px;
+    border: 1px solid rgba(156, 163, 175, 1);
+    text-align: center;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.05) scaleY(1.05);
+}
+
+.image-container {
+    display: none;
+    width: 50%;
+}
+
+.background-image {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .image-container {
+        display: block;
+    }
+
+    .form-container {
+        width: 50%;
+    }
+}
