@@ -1,0 +1,8 @@
+.coba {
+    color: red;
+    cursor: pointer;
+}
+
+.coba:hover {
+    color: green;
+}
